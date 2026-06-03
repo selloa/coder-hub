@@ -16,7 +16,7 @@ Things I work on, document, or publish. External tutorials stay in their own rep
 
 ### ScummEditor v1.0.4
 
-Community upstream maintenance fork of ScummEditor by mmoreira2000 (2024) - NET 4.8 + x86 - Release
+Community upstream maintenance fork for ScummEditor by mmoreira2000 (2024) - NET 4.8 + x86 - Release
 
 **Link:** [github.com/selloa/scummeditor](https://github.com/selloa/scummeditor)
 
@@ -91,6 +91,7 @@ A generator for background layouts for AGS and other games.
 
 ---
 
+## UnPublished
 ### LucasArts Preservation Library
 
 A game preservation effort for the content and asset libraries of influencial point and click adventure games.
