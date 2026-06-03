@@ -69,7 +69,7 @@ A Nintendo 3DS homebrew application that randomly selects, displays and then lau
 
 ### Which Game Is It?
 
-Get a Dialog - Guess the game - Point and Click Edition
+A point and click dialog quiz made for the mixnmojo community.
 
 **Link:** [selloa.github.io/which-game-is-it](https://selloa.github.io/which-game-is-it/)
 
