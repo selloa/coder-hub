@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>Coder Hub</title>
+  <meta name="description" content="Personal coding hub — projects, knowledge, and CV by selloa.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="markdown-export" data-theme="dark">
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Coder Hub</h1>
+      <p class="meta">Version 0.1.0 · 2026-06-01 · draft · by <a href="https://github.com/selloa">selloa</a></p>
+    <nav class="site-topnav" aria-label="Site">
+      <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="projects/index.html">Projects</a></li>
+      <li><a href="knowledge/index.html">Knowledge</a></li>
+      <li><a href="cv/index.html">CV</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <div class="site-layout">
+    <button type="button" class="site-sidebar-show" id="sidebar-show" hidden aria-controls="site-sidebar" title="Show navigation">Show nav</button>
+  <aside class="site-sidebar" id="site-sidebar" aria-label="Page sections">
+    <div class="site-sidebar-header">
+      <p class="site-sidebar-title">On this page</p>
+      <button type="button" class="site-sidebar-toggle" id="sidebar-hide" aria-controls="site-sidebar" aria-expanded="true" title="Hide navigation">Hide</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#about-this-site">About this site</a></li>
+      </ul>
+    </nav>
+  </aside>
+    <main id="markview-container" class="markdown-body code-block-scroll">
+    <h1 id="coder-hub">Coder Hub</h1>
+    <p><em>A simple home for my coding work online.</em></p>
+    <p>This site collects <strong>projects</strong>, <strong>knowledge notes</strong>, and a <strong>CV</strong> in one place. Content is written in Markdown and built into static pages — same workflow as my <a href="https://selloa.github.io/ghidra-reags-quickstart/">Ghidra-ReAGS quickstart</a> tutorial.</p>
+    <hr>
+    <h2 id="explore">Explore</h2>
+    <ul>
+    <li><strong><a href="projects/index.html">Projects</a></strong> — things I have built or documented</li>
+    <li><strong><a href="knowledge/index.html">Knowledge</a></strong> — topics, notes, and references</li>
+    <li><strong><a href="cv/index.html">CV</a></strong> — background and contact</li>
+    </ul>
+    <hr>
+    <h2 id="about-this-site">About this site</h2>
+    <p>The hub starts small and grows over time. Project tutorials and deep dives can live in their own repositories (linked from Projects); this site is the index people can bookmark.</p>
+    <hr>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <p>Built from <code>content/index.md</code> · v0.1.0 · 2026-06-01 · <a href="https://github.com/selloa">selloa</a></p>
+  </footer>
+  <a href="#" class="back-top" id="backTop" aria-label="Back to top">↑ Top</a>
+  <script>
+  (function () {
+    var hideBtn = document.getElementById('sidebar-hide');
+    var showBtn = document.getElementById('sidebar-show');
+    var storageKey = 'coder-hub-sidebar-hidden-home';
+
+    function setSidebarHidden(hidden) {
+      document.body.classList.toggle('sidebar-hidden', hidden);
+      if (hideBtn) hideBtn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
+      if (showBtn) showBtn.hidden = !hidden;
+      try { localStorage.setItem(storageKey, hidden ? '1' : '0'); } catch (e) {}
+    }
+
+    try {
+      if (localStorage.getItem(storageKey) === '1') setSidebarHidden(true);
+    } catch (e) {}
+
+    if (hideBtn) hideBtn.addEventListener('click', function () { setSidebarHidden(true); });
+    if (showBtn) showBtn.addEventListener('click', function () { setSidebarHidden(false); });
+
+    var backTop = document.getElementById('backTop');
+    if (backTop) {
+      window.addEventListener('scroll', function () {
+        backTop.classList.toggle('visible', window.scrollY > 400);
+      });
+      backTop.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

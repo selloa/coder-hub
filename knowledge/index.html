@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>Knowledge</title>
+  <meta name="description" content="Knowledge notes and topics by selloa.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body class="markdown-export" data-theme="dark">
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Knowledge</h1>
+      <p class="meta">Version 0.1.0 · 2026-06-01 · draft · by <a href="https://github.com/selloa">selloa</a></p>
+    <nav class="site-topnav" aria-label="Site">
+      <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../projects/index.html">Projects</a></li>
+      <li><a href="../knowledge/index.html" aria-current="page">Knowledge</a></li>
+      <li><a href="../cv/index.html">CV</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <div class="site-layout">
+    <button type="button" class="site-sidebar-show" id="sidebar-show" hidden aria-controls="site-sidebar" title="Show navigation">Show nav</button>
+  <aside class="site-sidebar" id="site-sidebar" aria-label="Page sections">
+    <div class="site-sidebar-header">
+      <p class="site-sidebar-title">On this page</p>
+      <button type="button" class="site-sidebar-toggle" id="sidebar-hide" aria-controls="site-sidebar" aria-expanded="true" title="Hide navigation">Hide</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#reverse-engineering">Reverse engineering</a></li>
+        <li><a href="#game-development">Game development</a></li>
+        <li><a href="#general-coding">General coding</a></li>
+      </ul>
+    </nav>
+  </aside>
+    <main id="markview-container" class="markdown-body code-block-scroll">
+    <h1 id="knowledge">Knowledge</h1>
+    <p>Notes, references, and topics I want to keep handy. Each major topic is a section below.</p>
+    <hr>
+    <h2 id="reverse-engineering">Reverse engineering</h2>
+    <ul class="task-list">
+    <li class="task-list-item"><input type="checkbox"> Tools and workflows (Ghidra, etc.)</li>
+    <li class="task-list-item"><input type="checkbox"> Notes from projects</li>
+    </ul>
+    <hr>
+    <h2 id="game-development">Game development</h2>
+    <ul class="task-list">
+    <li class="task-list-item"><input type="checkbox"> AGS and related tooling</li>
+    <li class="task-list-item"><input type="checkbox"> Other engines or formats</li>
+    </ul>
+    <hr>
+    <h2 id="general-coding">General coding</h2>
+    <ul class="task-list">
+    <li class="task-list-item"><input type="checkbox"> Languages and libraries I use often</li>
+    <li class="task-list-item"><input type="checkbox"> Snippets and patterns worth keeping</li>
+    </ul>
+    <hr>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <p>Built from <code>content/knowledge.md</code> · v0.1.0 · 2026-06-01 · <a href="https://github.com/selloa">selloa</a></p>
+  </footer>
+  <a href="#" class="back-top" id="backTop" aria-label="Back to top">↑ Top</a>
+  <script>
+  (function () {
+    var hideBtn = document.getElementById('sidebar-hide');
+    var showBtn = document.getElementById('sidebar-show');
+    var storageKey = 'coder-hub-sidebar-hidden-knowledge';
+
+    function setSidebarHidden(hidden) {
+      document.body.classList.toggle('sidebar-hidden', hidden);
+      if (hideBtn) hideBtn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
+      if (showBtn) showBtn.hidden = !hidden;
+      try { localStorage.setItem(storageKey, hidden ? '1' : '0'); } catch (e) {}
+    }
+
+    try {
+      if (localStorage.getItem(storageKey) === '1') setSidebarHidden(true);
+    } catch (e) {}
+
+    if (hideBtn) hideBtn.addEventListener('click', function () { setSidebarHidden(true); });
+    if (showBtn) showBtn.addEventListener('click', function () { setSidebarHidden(false); });
+
+    var backTop = document.getElementById('backTop');
+    if (backTop) {
+      window.addEventListener('scroll', function () {
+        backTop.classList.toggle('visible', window.scrollY > 400);
+      });
+      backTop.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

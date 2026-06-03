@@ -1,0 +1,21 @@
+# Python (build script)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Author drafts (local only)
+notes/
+content/drafts/

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>CV</title>
+  <meta name="description" content="CV and contact — selloa.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body class="markdown-export" data-theme="dark">
+  <header class="site-header">
+    <div class="wrap">
+      <h1>CV</h1>
+      <p class="meta">Version 0.1.0 · 2026-06-01 · draft · by <a href="https://github.com/selloa">selloa</a></p>
+    <nav class="site-topnav" aria-label="Site">
+      <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../projects/index.html">Projects</a></li>
+      <li><a href="../knowledge/index.html">Knowledge</a></li>
+      <li><a href="../cv/index.html" aria-current="page">CV</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <div class="site-layout">
+    <button type="button" class="site-sidebar-show" id="sidebar-show" hidden aria-controls="site-sidebar" title="Show navigation">Show nav</button>
+  <aside class="site-sidebar" id="site-sidebar" aria-label="Page sections">
+    <div class="site-sidebar-header">
+      <p class="site-sidebar-title">On this page</p>
+      <button type="button" class="site-sidebar-toggle" id="sidebar-hide" aria-controls="site-sidebar" aria-expanded="true" title="Hide navigation">Hide</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+    <main id="markview-container" class="markdown-body code-block-scroll">
+    <h1 id="cv">CV</h1>
+    <p>Short professional overview. Expand this file as needed.</p>
+    <hr>
+    <h2 id="about">About</h2>
+    <p>[TODO: A few sentences about who you are and what you focus on.]</p>
+    <hr>
+    <h2 id="experience">Experience</h2>
+    <p>[TODO: Roles, projects, or highlights — bullet list is fine.]</p>
+    <hr>
+    <h2 id="skills">Skills</h2>
+    <p>[TODO: Languages, tools, domains.]</p>
+    <hr>
+    <h2 id="contact">Contact</h2>
+    <ul>
+    <li><strong>GitHub:</strong> <a href="https://github.com/selloa">github.com/selloa</a></li>
+    <li>[TODO: Email or other links when you are ready to publish them]</li>
+    </ul>
+    <hr>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <p>Built from <code>content/cv.md</code> · v0.1.0 · 2026-06-01 · <a href="https://github.com/selloa">selloa</a></p>
+  </footer>
+  <a href="#" class="back-top" id="backTop" aria-label="Back to top">↑ Top</a>
+  <script>
+  (function () {
+    var hideBtn = document.getElementById('sidebar-hide');
+    var showBtn = document.getElementById('sidebar-show');
+    var storageKey = 'coder-hub-sidebar-hidden-cv';
+
+    function setSidebarHidden(hidden) {
+      document.body.classList.toggle('sidebar-hidden', hidden);
+      if (hideBtn) hideBtn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
+      if (showBtn) showBtn.hidden = !hidden;
+      try { localStorage.setItem(storageKey, hidden ? '1' : '0'); } catch (e) {}
+    }
+
+    try {
+      if (localStorage.getItem(storageKey) === '1') setSidebarHidden(true);
+    } catch (e) {}
+
+    if (hideBtn) hideBtn.addEventListener('click', function () { setSidebarHidden(true); });
+    if (showBtn) showBtn.addEventListener('click', function () { setSidebarHidden(false); });
+
+    var backTop = document.getElementById('backTop');
+    if (backTop) {
+      window.addEventListener('scroll', function () {
+        backTop.classList.toggle('visible', window.scrollY > 400);
+      });
+      backTop.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
