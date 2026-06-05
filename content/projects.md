@@ -14,6 +14,12 @@ Things I work on, document, or publish. External tutorials stay in their own rep
 
 ## Published
 
+### Adventure Game Studio Web Demos
+
+A small collection of tiny demos and games made with Adventure Game Studio's  Web engine
+
+**Link:** [selloa.github.io/ags-web-demos]([https://selloa.github.io/ags-web-demos/)
+
 ### ScummEditor v1.0.4
 
 Community upstream maintenance fork for ScummEditor by mmoreira2000 (2024) - NET 4.8 + x86 - Release
