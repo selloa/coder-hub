@@ -14,6 +14,12 @@ Things I work on, document, or publish. External tutorials stay in their own rep
 
 ## Published
 
+### AGS Editor Plugins
+
+My space for my AGS Plugins with documentation
+
+**Link:** [selloa.github.io/ags-editor-plugins](https://selloa.github.io/ags-editor-plugins/)
+
 ### Day of the Tentacle Theatre
 
 A longterm project in its infancy
