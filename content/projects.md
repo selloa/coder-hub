@@ -18,7 +18,7 @@ Things I work on, document, or publish. External tutorials stay in their own rep
 
 A longterm project in its infancy
 
-https://selloa.github.io/dottt-hub/
+**Link**: [selloa.github.io/dottt-hub](https://selloa.github.io/dottt-hub/)
 
 
 ### Adventure Game Studio Web Demos
@@ -146,25 +146,3 @@ Web TV Channel for mmm
 ### Sprite Browser
 
 A comprehensive web-based tool for browsing, managing, and categorizing sprites from AGS (Adventure Game Studio) games.
-
----
-
-## In progress
-
-[ ] ScummVMMM
-
-[ ] Add your next project here (title, one-line blurb, link)
-
----
-
-## How to add a project
-
-1. Edit this file — add a `##` section with title, description, and link.
-2. Run `python build.py` (or `serve.bat`).
-3. For a full tutorial subsite, use a separate repo (like the Ghidra quickstart) and link it from here.
-
----
-
-## Page build notes
-
-Internal notes for the author.
