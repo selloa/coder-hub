@@ -12,8 +12,9 @@
 <body class="markdown-export" data-theme="dark">
   <header class="site-header">
     <div class="wrap">
+      <div id="google_translate_element" class="site-translate"></div>
       <h1>CV</h1>
-      <p class="meta">Version 0.1.0 · 2026-06-01 · draft · by <a href="https://github.com/selloa">selloa</a></p>
+      <p class="meta">Version 0.1.0 · 2026-06-01 · draft · by <a href="https://github.com/selloa" target="_blank" rel="noopener noreferrer">selloa</a></p>
     <nav class="site-topnav" aria-label="Site">
       <ul>
       <li><a href="../index.html">Home</a></li>
@@ -33,10 +34,11 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="sidebar-h1"><a href="#cv">CV</a></li>
+        <li class="sidebar-h2"><a href="#about">About</a></li>
+        <li class="sidebar-h2"><a href="#experience">Experience</a></li>
+        <li class="sidebar-h2"><a href="#skills">Skills</a></li>
+        <li class="sidebar-h2"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </aside>
@@ -55,14 +57,14 @@
     <hr>
     <h2 id="contact">Contact</h2>
     <ul>
-    <li><strong>GitHub:</strong> <a href="https://github.com/selloa">github.com/selloa</a></li>
+    <li><strong>GitHub:</strong> <a href="https://github.com/selloa" target="_blank" rel="noopener noreferrer">github.com/selloa</a></li>
     <li>[TODO: Email or other links when you are ready to publish them]</li>
     </ul>
     <hr>
     </main>
   </div>
   <footer class="site-footer">
-    <p>Built from <code>content/cv.md</code> · v0.1.0 · 2026-06-01 · <a href="https://github.com/selloa">selloa</a></p>
+    <p>Built from <code>content/cv.md</code> · v0.1.0 · 2026-06-01 · <a href="https://github.com/selloa" target="_blank" rel="noopener noreferrer">selloa</a></p>
   </footer>
   <a href="#" class="back-top" id="backTop" aria-label="Back to top">↑ Top</a>
   <script>
@@ -97,5 +99,14 @@
     }
   })();
   </script>
+  <script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      { pageLanguage: 'en', includedLanguages: 'en,fr,it,de,es', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL },
+      'google_translate_element'
+    );
+  }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

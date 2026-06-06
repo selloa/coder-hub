@@ -12,8 +12,9 @@
 <body class="markdown-export" data-theme="dark">
   <header class="site-header">
     <div class="wrap">
+      <div id="google_translate_element" class="site-translate"></div>
       <h1>Coder Hub</h1>
-      <p class="meta">Version 0.1.0 · 2026-06-01 · draft · by <a href="https://github.com/selloa">selloa</a></p>
+      <p class="meta">Version 0.1.0 · 2026-06-01 · draft · by <a href="https://github.com/selloa" target="_blank" rel="noopener noreferrer">selloa</a></p>
     <nav class="site-topnav" aria-label="Site">
       <ul>
       <li><a href="index.html" aria-current="page">Home</a></li>
@@ -33,15 +34,16 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#explore">Explore</a></li>
-        <li><a href="#about-this-site">About this site</a></li>
+        <li class="sidebar-h1"><a href="#coder-hub">Coder Hub</a></li>
+        <li class="sidebar-h2"><a href="#explore">Explore</a></li>
+        <li class="sidebar-h2"><a href="#about-this-site">About this site</a></li>
       </ul>
     </nav>
   </aside>
     <main id="markview-container" class="markdown-body code-block-scroll">
     <h1 id="coder-hub">Coder Hub</h1>
     <p><em>A simple home for my coding work online.</em></p>
-    <p>This site collects <strong>projects</strong>, <strong>knowledge notes</strong>, and a <strong>CV</strong> in one place. Content is written in Markdown and built into static pages — same workflow as my <a href="https://selloa.github.io/ghidra-reags-quickstart/">Ghidra-ReAGS quickstart</a> tutorial.</p>
+    <p>This site collects <strong>projects</strong>, <strong>knowledge notes</strong>, and a <strong>CV</strong> in one place. Content is written in Markdown and built into static pages — same workflow as my <a href="https://selloa.github.io/ghidra-reags-quickstart/" target="_blank" rel="noopener noreferrer">Ghidra-ReAGS quickstart</a> tutorial.</p>
     <hr>
     <h2 id="explore">Explore</h2>
     <ul>
@@ -56,7 +58,7 @@
     </main>
   </div>
   <footer class="site-footer">
-    <p>Built from <code>content/index.md</code> · v0.1.0 · 2026-06-01 · <a href="https://github.com/selloa">selloa</a></p>
+    <p>Built from <code>content/index.md</code> · v0.1.0 · 2026-06-01 · <a href="https://github.com/selloa" target="_blank" rel="noopener noreferrer">selloa</a></p>
   </footer>
   <a href="#" class="back-top" id="backTop" aria-label="Back to top">↑ Top</a>
   <script>
@@ -91,5 +93,14 @@
     }
   })();
   </script>
+  <script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      { pageLanguage: 'en', includedLanguages: 'en,fr,it,de,es', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL },
+      'google_translate_element'
+    );
+  }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

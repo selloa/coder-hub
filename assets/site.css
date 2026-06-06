@@ -1288,3 +1288,93 @@ body.markdown-export[data-theme="dark"] input[type="checkbox"] {
 body {
   top: 0 !important;
 }
+
+/* Owner / fork badges (build.py) */
+.tag-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
+
+.tag-owner {
+  background: rgba(139, 92, 246, 0.2);
+  color: #a78bfa;
+  border: 1px solid rgba(139, 92, 246, 0.35);
+}
+
+.tag-fork {
+  background: rgba(88, 166, 255, 0.15);
+  color: #79c0ff;
+  border: 1px solid rgba(88, 166, 255, 0.3);
+}
+
+/* Sidebar heading hierarchy (build.py) */
+.site-sidebar li.sidebar-h1 a {
+  font-weight: 600;
+  color: #c9d1d9;
+}
+
+.site-sidebar li.sidebar-h2 a {
+  padding-left: 1rem;
+  font-size: 0.75rem;
+}
+
+.site-sidebar li.sidebar-h3 a {
+  padding-left: 2rem;
+  font-size: 0.75rem;
+}
+
+.site-sidebar li.sidebar-h4 a {
+  padding-left: 3rem;
+  font-size: 0.7rem;
+}
+
+body.markdown-export[data-theme="dark"] .site-sidebar li.sidebar-h1 a {
+  color: #c9d1d9;
+}
+
+body.markdown-export[data-theme="dark"] .site-sidebar li.sidebar-h1 a:hover {
+  color: #79c0ff;
+}
+
+/* Resource links in main content — read like text, highlight on hover */
+#markview-container a {
+  color: #c9d1d9 !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(139, 148, 158, 0.25);
+  text-underline-offset: unset;
+  text-decoration-thickness: unset;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+#markview-container a:hover {
+  color: #79c0ff !important;
+  border-bottom-color: rgba(88, 166, 255, 0.55);
+  text-decoration: none !important;
+}
+
+#markview-container strong a,
+#markview-container a strong {
+  font-weight: inherit;
+}
+
+#markview-container a.link-video::after {
+  content: "▶";
+  display: inline-block;
+  font-size: 0.55em;
+  margin-left: 0.4em;
+  opacity: 0.4;
+  vertical-align: 0.1em;
+  transition: opacity 0.15s;
+}
+
+#markview-container a.link-video:hover::after {
+  opacity: 0.75;
+  color: #79c0ff;
+}

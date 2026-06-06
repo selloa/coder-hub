@@ -14,6 +14,13 @@ Things I work on, document, or publish. External tutorials stay in their own rep
 
 ## Published
 
+### Day of the Tentacle Theatre
+
+A longterm project in its infancy
+
+https://selloa.github.io/dottt-hub/
+
+
 ### Adventure Game Studio Web Demos
 
 A small collection of tiny demos and games made with Adventure Game Studio's  Web engine
@@ -101,12 +108,6 @@ A generator for background layouts for AGS and other games.
 ### LucasArts Preservation Library
 
 A game preservation effort for the content and asset libraries of influencial point and click adventure games.
-
----
-
-### Day of the Tentacle Theatre
-
-tba
 
 ---
 
